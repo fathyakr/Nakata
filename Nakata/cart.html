@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles-cart.css">
+    <link rel="icon" href="assets/Nakata_Desc-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="assets/Nakata_Desc-removebg-preview.png" alt="logo" class="logo">
+        <nav style="margin-right: 500px;">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="assets/cart.png" alt="Cart"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="shopping-cart">
+        <p style="margin-bottom: 30px;">Shopping Cart</p>
+        <table class="products-table">
+            <thead>
+                <tr>
+                    <th>Products info</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img style="width: 187px; height: 166px; object-fit: cover;" 
+                                src="assets/keychain.jpeg" alt="Sample Product">
+                            <div class="product-details">
+                                <h3>Acylic Keychain</h3>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Rp55.000</td>
+                    <td>2</td>
+                    <td>Rp110.000</td>
+                    <td>
+                        <button class="submit-btn-red">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img style="width: 187px; height: 166px; object-fit: cover;" 
+                                src="assets/One Piece Messenger Bag.jpeg" alt="Sample Product 2">
+                            <div class="product-details">
+                                <h3>One Piece Messenger Bag</h3>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Rp150.000</td>
+                    <td>1</td>
+                    <td>Rp150.000</td>
+                    <td>
+                        <button class="submit-btn-red">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: right; margin-top: 20px;">
+            <strong style="font-size: 24px;">Subtotal: Rp260.000</strong>
+        </div>
+        <div style="text-align: right; margin-top: 10px;">
+            <button class="btn-checkout" onclick="location.href='checkout.html'">Checkout</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="assets/Nakata_Desc-removebg-preview.png" class="logo" alt="Beauteasy Logo">
+        </div>
+        <div class="footer-section">
+            <h3>Home</h3>
+        </div>
+        <div class="footer-section">
+            <h3>Products</h3>
+        </div>
+        <div class="footer-section">
+            <h3>Brands</h3>
+        </div>
+        <div class="footer-section">
+            <h3>About Us</h3>
+        </div>
+        <div class="footer-social">
+            <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/tiktok.png" alt="TikTok"></a>
+            <a href="#"><img src="assets/youtube.png" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
+</html>
+```

@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="styles-product.css">
+    <link rel="icon" href="assets/Nakata_Desc-removebg-preview.png" type="image/x-icon">
+    <style>
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .search-container input[type=text] {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .search-container button {
+            padding: 8px 12px;
+            background-color: #e6d820;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .search-container button:hover {
+            background-color: #125d86;
+        }
+        .category-filter {
+            display: flex;
+            margin: 20px 0;
+        }
+        .filter-btn {
+            text-decoration: none;
+            background-color: #e6d820;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 60px;
+            margin: 0 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .filter-btn:hover {
+            background-color: #125d86;
+        }
+        .filter-btn.active {
+            background-color: #125d86;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/Nakata_Desc-removebg-preview.png" alt="logo" class="logo">
+        <nav style="margin-right: 10px;">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form action="product.html" method="GET">
+                <input type="text" name="search" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="cart.html"><img src="assets/cart.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+   
+<div class="recommended-product">
+    <p style="margin-bottom: 30px;">Products</p>
+    <div class="category-filter">
+        <button class="filter-btn active" data-category="all">All Products</button>
+    </div>
+
+    <div class="catalogue">
+        <div class="product">
+            
+                <img class="product-image" src="assets/shirt.jpeg" width="292" height="382" alt="Product 1">
+            </a>
+            <p style="font-weight: 500;">One Piece Shirt</p>
+            <p style="font-weight: 500; font-size: 16px">Sold: 11k</p>
+            <p style="margin-top: 10px; margin-bottom: 10px;">Rp 120.000</p>
+            <form action="cart.html" method="GET">
+                <input type="hidden" name="idProduct" value="1">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit" class="btn-add-to-cart">Add to Cart</button>
+            </form>
+
+            <button class="details-btn">View Details</button>
+        </div>
+
+        <!-- Contoh produk 2 -->
+        <div class="product">
+            <a href="details.html?idProduct=2">
+                <img class="product-image" src="assets/tumbler.jpeg" width="292" height="382" alt="Product 2">
+            </a>
+            <p style="font-weight: 500;">One Piece Tumbler</p>
+            <p style="font-weight: 500; font-size: 16px">Sold: 9</p>
+            <p style="margin-top: 10px; margin-bottom: 10px;">Rp 85.000</p>
+            <form action="cart.html" method="GET">
+                <input type="hidden" name="idProduct" value="1">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit" class="btn-add-to-cart">Add to Cart</button>
+            </form>
+
+            <a href="details.html?idProduct=2"><button class="details-btn">View Details</button></a>
+        </div>
+          <!-- Contoh produk 2 -->
+        <div class="product">
+            <a href="details.html?idProduct=2">
+                <img class="product-image" src="assets/One Piece Messenger Bag.jpeg" width="292" height="382" alt="Product 2">
+            </a>
+            <p style="font-weight: 500;">One Piece Messenger Bag</p>
+            <p style="font-weight: 500; font-size: 16px">Sold: 5k</p>
+            <p style="margin-top: 10px; margin-bottom: 10px;">Rp 150.000</p>
+            <form action="cart.html" method="GET">
+                <input type="hidden" name="idProduct" value="1">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit" class="btn-add-to-cart">Add to Cart</button>
+            </form>
+
+            <a href="details.html?idProduct=2"><button class="details-btn">View Details</button></a>
+        </div>
+
+        <!-- Contoh produk 3 -->
+        <div class="product">
+            <a href="details.html?idProduct=3">
+                <img class="product-image" src="assets/plushie.jpeg" width="292" height="382" alt="Product 3">
+            </a>
+            <p style="font-weight: 500;">Chopper Plushie</p>
+            <p style="font-weight: 500; font-size: 16px">Sold: 3k</p>
+            <p style="margin-top: 10px; margin-bottom: 10px;">Rp 75.000</p>
+            <form action="cart.html" method="GET">
+                <input type="hidden" name="idProduct" value="1">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit" class="btn-add-to-cart">Add to Cart</button>
+            </form>
+            <a href="details.html"><button class="details-btn">View Details</button></a>
+        </div>
+
+        <!-- Contoh produk 3 -->
+        <div class="product">
+            <a href="details.html?idProduct=3">
+                <img class="product-image" src="assets/keychain.jpeg" width="292" height="382" alt="Product 3">
+            </a>
+            <p style="font-weight: 500;">Acrylic Keychain</p>
+            <p style="font-weight: 500; font-size: 16px">Sold: 2k</p>
+            <p style="margin-top: 10px; margin-bottom: 10px;">Rp 55.000</p>
+            <form action="cart.html" method="GET">
+                <input type="hidden" name="idProduct" value="1">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit" class="btn-add-to-cart">Add to Cart</button>
+            </form>
+            <a href="details.html"><button class="details-btn">View Details</button></a>
+        </div>
+
+        <!-- Contoh produk 3 -->
+        <div class="product">
+            <a href="details.html?idProduct=3">
+                <img class="product-image" src="assets/zoro figure.jpeg" width="292" height="382" alt="Product 3">
+            </a>
+            <p style="font-weight: 500;">Zoro Action Figure</p>
+            <p style="font-weight: 500; font-size: 16px">Sold: 1k</p>
+            <p style="margin-top: 10px; margin-bottom: 10px;">Rp 95.000</p>
+            <form action="cart.html" method="GET">
+                <input type="hidden" name="idProduct" value="1">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit" class="btn-add-to-cart">Add to Cart</button>
+            </form>
+            <a href="details.html"><button class="details-btn">View Details</button></a>
+        </div>
+
+        <!-- Contoh produk 3 -->
+        <div class="product">
+            <a href="details.html?idProduct=3">
+                <img class="product-image" src="assets/sanji figure.jpeg" width="292" height="382" alt="Product 3">
+            </a>
+            <p style="font-weight: 500;">Sanji Vinyl Figure</p>
+            <p style="font-weight: 500; font-size: 16px">Sold: 3k</p>
+            <p style="margin-top: 10px; margin-bottom: 10px;">Rp 110.000</p>
+            <form action="cart.html" method="GET">
+                <input type="hidden" name="idProduct" value="1">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit" class="btn-add-to-cart">Add to Cart</button>
+            </form>
+            <a href="details.html"><button class="details-btn">View Details</button></a>
+        </div>
+    </div>
+</div>
+</body>
+
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="assets/Nakata_Desc-removebg-preview.png" class="logo" alt="Beauteasy Logo">
+        </div>
+        <div class="footer-section">
+            <h3>Home</h3>
+         
+        </div>
+        <div class="footer-section">
+            <h3>Products</h3>
+
+        </div>
+        <div class="footer-section">
+            <h3>Brands</h3>
+        </div>
+        <div class="footer-section">
+            <h3>About Us</h3>
+        
+        </div>
+        <div class="footer-social">
+            <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/tiktok.png" alt="TikTok"></a>
+            <a href="#"><img src="assets/youtube.png" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
+</html>
